@@ -12,24 +12,31 @@
 
 <body>
     <h1>Search your favorite juicy here </h1>
+     <!-------|--search area start--|-------->
     <div class="search_area">
         <input id="searchField" type="text" placeholder="search here by name">
         <button onclick="loadCocktail()">Search</button>
     </div>
+    <!-------|--search area end--|-------->
 
-    <div id="single_details">
-
-    </div>
-
+    <!-------|--single_details area start--|-------->
+    <div id="single_details"></div>
+    <!-------|--single_details area end--|-------->
+    
+    <!-------|--spinner area start--|-------->
     <div id="spinner" style="margin-top: 10px;">
         <label for="file">Please wait... </label>
         <progress id="file" max="100"> 32% </progress>
     </div>
+    <!-------|--spinner area end--|-------->
+
+    <!-------|--error_msg area start--|-------->
     <div id="error_msg"></div>
+    <!-------|--error_msg area end--|-------->
 
-    <div id="display_cocktail">
-
-    </div>
+    <!-------|--display_cocktail area start--|-------->
+    <div id="display_cocktail"></div>
+    <!-------|--display_cocktail area end--|-------->
 
     <!-- js link -->
     <script src="js/app.js"></script>
