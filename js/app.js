@@ -1,4 +1,7 @@
-
+//spinner
+const spinner = (progress) => {
+  document.getElementById("spinner").style.display = progress;
+}
 //load data
 const loadCocktail = async () =>{
     //get input field
@@ -19,6 +22,7 @@ const loadCocktail = async () =>{
         fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${inputValue}`)
         .then(res => res.json())
         .then(data => displayCocktail(data.drinks))
+        spinner("block")
   }
 }
 //display Cocktail
@@ -45,6 +49,7 @@ cocktails.forEach(item => {
     `
     display.appendChild(div);
 });
+spinner("none")
 }
 }
 

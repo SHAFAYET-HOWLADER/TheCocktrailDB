@@ -80,3 +80,9 @@ button {
     font-weight: 700;
     text-align: center;
 }
+
+#spinner {
+    text-align: center;
+    margin: 0px auto;
+    display: none;
+}

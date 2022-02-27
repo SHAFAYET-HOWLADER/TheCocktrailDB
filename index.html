@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,28 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
     <h1>Search your favorite juicy here </h1>
-      <div class="search_area">
-          <input id="searchField" type="text" placeholder="search here by name">
-          <button onclick="loadCocktail()">Search</button>
-      </div>
-      <div id="single_details">
+    <div class="search_area">
+        <input id="searchField" type="text" placeholder="search here by name">
+        <button onclick="loadCocktail()">Search</button>
+    </div>
+    <div id="single_details">
 
-      </div>
-      <div id="error_msg"></div>
-      <div id="display_cocktail">
+    </div>
+    <div id="spinner" style="margin-top: 10px;">
+        <label for="file">loading progress:</label>
+        <progress id="file" max="100"> 32% </progress>
+    </div>
+    <div id="error_msg"></div>
 
-      </div>
+    <div id="display_cocktail">
+
+    </div>
+
     <!-- js link -->
     <script src="js/app.js"></script>
 </body>
+
 </html>
