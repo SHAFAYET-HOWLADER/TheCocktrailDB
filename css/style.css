@@ -1,0 +1,82 @@
+body {
+    background-color: #d1d1d1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#display_cocktail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    align-items: center;
+}
+
+#single_details {
+    width: 30%;
+    margin: 0px auto;
+}
+
+.cocktails img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.productDetails img {
+    width: 100%;
+    height: 20%;
+    margin: 0px auto;
+}
+
+.cocktails,
+.productDetails {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: justify;
+}
+
+.cocktails p,
+h3 {
+    text-align: justify;
+}
+
+h1 {
+    background-color: hotpink;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0px;
+}
+
+.search_area {
+    text-align: center;
+}
+
+.search_area button,
+input {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    margin: 8px;
+    border-radius: 2px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 1px 10px 4px hotpink;
+    transition: all linear .4s;
+}
+
+button {
+    background-color: hotPink;
+    color: #fff;
+    cursor: pointer;
+}
+
+#error_msg {
+    color: rgb(241, 88, 18);
+    font-size: 25px;
+    transition: all linear .4s;
+    font-weight: 700;
+    text-align: center;
+}
