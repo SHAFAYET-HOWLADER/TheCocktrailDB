@@ -13,17 +13,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #single_details {
-        width: 50%;
-    }
 }
 
 @media (min-width: 800px) and (max-width: 1100px) {
     #display_cocktail {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    #single_details {
-        width: 50%;
     }
 }
