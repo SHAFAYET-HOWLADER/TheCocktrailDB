@@ -32,6 +32,7 @@ const displayCocktail = (cocktails) =>{
     display.textContent = "";
     if(cocktails === null){
         msg.innerHTML = " ! Please enter a valid name"
+        spinner("none")
     }
 else{
     //   console.log(cocktails)
